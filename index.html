@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RelentlessMMA</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="fullcalendar-4.1.0/packages/core/main.js"></script>
+		<script src="fullcalendar-4.1.0/packages/daygrid/main.js"></script>
+		<script src="fullcalendar-4.1.0/packages/timegrid/main.js"></script>
+		<script src='fullcalendar-4.1.0/packages/bootstrap/main.js'></script>
+		<script src="schedule.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+		<link href="fullcalendar-4.1.0/packages/core/main.css" rel="stylesheet">
+		<link href="fullcalendar-4.1.0/packages/daygrid/main.css" rel="stylesheet">
+		<link href="fullcalendar-4.1.0/packages/timegrid/main.css" rel="stylesheet">
+		<link href='fullcalendar-4.1.0/packages/bootstrap/main.css' rel='stylesheet'>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<script>
+			function opennav(){
+				document.getElementById('slidenav').style.width="250px";
+			}
+
+			function closenav(){
+				document.getElementById('slidenav').style.width="0px";
+			}
+		</script>
+	</head>
+
+	<body>
+		<section class="homepage" id="homepage">
+			<div id="slidenav" class="sidebar__navpurple--Dark">
+			  <div class="sidebar--header">
+			    <h3>RelentlessMMA</h3>
+			  </div>
+			  <span class="close--icon" id="close--icon" onclick="closenav()"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+			  <ul class="list-unstyled components">
+			    <p>Main Menu</p>
+			    <li class="active">
+			      <a href="#homepage"><span><i class="fa fa-home" aria-hidden="true"></i></span> Home</a>
+			    </li>
+			    <li>
+			      <a href="#classes"><span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span> Classes</a>
+			    </li>
+					<li>
+						<a href="instructors.html"><span><i class="fa fa-users" aria-hidden="true"></i></span> Instructors</a>
+					</li>
+			    <li>
+			      <a href="#schedule"><span><i class="fa fa-suitcase" aria-hidden="true"></i></span> Schedule</a>
+			    </li>
+			    <li>
+			      <a href="#contact"><span><i class="fa fa-address-card-o" aria-hidden="true"></i></span> Contact</a>
+			    </li>
+			  </ul>
+			</div>
+			<span class="icon" id="menuicon" onclick="opennav()">&#9776;</span>
+
+			<div class="header__text--box" >
+	      <h1 class="heading__primary">
+	        <span class="heading__primary--main">RelentlessMMA<br></span>
+	        <span class="heading__primary--sub">Muay Thai, Crossfit, Catch Wrestling, Brazilian Jit Jutsu</span>
+	      </h1>
+	      <a href="#contact" class="btn btn--white btn--animated">Register for Classes</a>
+	    </div>
+		</section>
+
+		<section class="classes" id="classes">
+			<div class="header__text--secondbox" >
+				<h2 class="heading__secondary">
+					<span class="heading__secondary--main">Classes</span>
+				</h2>
+			</div>
+
+			<div class="flex__container">
+				<div class="selections">
+					<div data-aos="fade-right">
+		        <figure class="selections__shape">
+		          <img src="../img/training.jpg" alt="muay thai training" class="selections__img">
+		          <figcaption class="selections__caption">Muay Thai</figcaption>
+		        </figure>
+					</div>
+
+					<div data-aos="flip-down">
+						<figure class="selections__shape">
+		          <img src="../img/group.jpg" alt="Vrossfit Classes" class="selections__img">
+		          <figcaption class="selections__caption">Crossfit</figcaption>
+		        </figure>
+					</div>
+
+					<div data-aos="fade-left">
+						<figure class="selections__shape">
+		          <img src="../img/BJJ.jpg" alt="BJJ training" class="selections__img">
+		          <figcaption class="selections__caption">Brazilian Jit Jutsu</figcaption>
+		        </figure>
+					</div>
+        </div>
+			</div>
+		</section>
+
+		<section class="schedule" id="schedule">
+			<div class="header__text--secondbox" >
+				<h2 class="heading__secondary">
+					<span class="heading__secondary--mainschedule">Schedule</span>
+				</h2>
+			</div>
+
+			<div id="calendar"></div>
+
+			<p class="schedule__text">For closing and delays please check our facebook group, Relentless MMA & Fitness or look up coach, Dave Carter.</p>
+
+			<div class="schedule__img--photos">
+					<a href="https://erikpaulson.com/"><img src="../img/CSW logo.jpg" alt="Erik Paulson CSW Logo" class="img--content-logo"></a>
+					<a href="https://erikpaulson.com/"><img src="../img/kickboxing_logo.jpg" alt="Erik Paulson Kickboxing Logo" class="img--content-logo"></a>
+					<a href="http://jkdathletics.com/"><img src="../img/JKD_logo.jpg" alt="Jeet Kune Do Logo" class="img--content-logo"></a>
+			</div>
+		</section>
+
+
+		<section class="contact" id="contact">
+			<div class="header__text--secondbox" >
+				<h2 class="heading__secondary">
+					<span class="heading__secondary--main">Contact Us</span>
+				</h2>
+			</div>
+
+			<div class="flex__container--contact">
+				<form class="contact__form" action="contactform.php" method="post">
+					<h2 class="contact__form--header">Location</h2>
+					<p> 10580 Main St. Fairfax Va 22030 </p>
+					<h2 class="contact__form--header"> Phone Number</h2>
+					<p> 540-999-8270 </p>
+					<h2 class="contact__form--header"> Hours</h2>
+					<p> Monday-Thursday 7:00pm-10:00pm<br>Sunday 10:00am-2:00pm<br>Personal training hours vary</p>
+
+	        <div class="Inside_Content">
+	          <p><input type="text" name="Program" placeholder="Please input program" list="Programs" data-validation="length" data-validation-length="min1"/>
+	          <datalist id = "Programs">
+	            <option value = "Personal Training"></option>
+	            <option value = "MMA"></option>
+	            <option value = "Grappling"></option>
+	            <option value = "Striking"></option>
+	            <option value = "Boot Camp"></option>
+	          </datalist></p>
+
+	          <p><input type="text" name="Customer_Name" placeholder="Please enter your name" data-validation="required"/></p>
+
+	          <p><input type="email" name="Customer_Email" placeholder="Please enter your email" data-validation="email"/></p>
+
+	          <p><input type="text" name="Subject" placeholder="Input title" data-validation="required"/></p>
+
+	          <p><textarea name="Message" placeholder="What questions do you have?" rows="8" cols="60"></textarea></p>
+
+	          <p><input type = "submit" value = "Submit" name="Submit">
+	            <input type = "reset" value = "Clear" name="reset"></p>
+	        </div>
+      	</form>
+
+				<div class="contact__guide">
+					<img src="../img/shop.jpg" alt="Picture of training building" class="contact__guide--img"/>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823.9423330954859!2d-77.31134641312953!3d38.848273612856104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b646a6ed0d2fe3%3A0x6c17c7577556a070!2sRelentless+MMA+%26+Fitness!5e1!3m2!1sen!2sus!4v1559421000420!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="img--google-maps"></iframe>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__navigation">
+				<ul class="footer__links">
+					<li class="footer__item"><a href="#homepage" class="footer__link">Home</a></li>
+					<li class="footer__item"><a href="#classes" class="footer__link">Classes</a></li>
+					<li class="footer__item"><a href="instructors.html" class="footer__link">Instructors</a></li>
+					<li class="footer__item"><a href="#schedule" class="footer__link">Schedule</a></li>
+					<li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__photo">
+				<img src="../img/RelentlessMMA.png" alt="Gym Logo" class="footer__img"/>
+			</div>
+
+			<div class="footer__text">
+					<p class="footer__copyright">Copyright by <a href="https://alexnicho24.github.io/AlexDesigns/index.html" target="_blank" class="footer__link">Alex Nicholas</a></p>
+			</div>
+
+			<div class="social-media">
+					<div class="social-media__icon--facebook">
+						<a class="fa fa-facebook" aria-hidden="true" href="https://www.facebook.com/groups/250758651741993/"></a>
+					</div>
+					<div class="social-media__icon--youtube">
+						<a class="fa fa-youtube" aria-hidden="true" href="https://www.youtube.com/user/davefights"></a>
+					</div>
+					<div class="social-media__icon--twitter">
+						<a class="fa fa-twitter" aria-hidden="true" href="https://twitter.com/relentlessmma2"></a>
+					</div>
+					<div class="social-media__icon--instagram">
+						<a class="fa fa-instagram" aria-hidden="true" href="https://www.instagram.com/relentless_mma_and_fitness/"></a>
+					</div>
+				</div>
+		</footer>
+
+		<script>
+			AOS.init();
+		</script>
+  </body>
+</html>
