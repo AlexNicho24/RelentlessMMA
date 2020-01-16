@@ -24,6 +24,10 @@
    background-color: #61892F;
    color: #FFF;
    font-size: 2rem;
+
+   @include respond(Tablet-Landscape){//width < 900?
+     font-size: 3rem; //1rem = 9px, 9/16=56.25%
+   }
   }
 
   ul.components{
@@ -34,6 +38,10 @@
     color: #FFF;
     padding: 2rem;
     font-size: 2rem;
+
+    @include respond(Tablet-Landscape){//width < 900?
+      font-size: 3rem; //1rem = 9px, 9/16=56.25%
+    }
   }
 
   ul li a{
@@ -41,5 +49,9 @@
     font-size: 2rem;
     display: block;
     color: #FFF;
+
+    @include respond(Tablet-Landscape){//width < 900?
+      font-size: 3rem; //1rem = 9px, 9/16=56.25%
+    }
   }
 }

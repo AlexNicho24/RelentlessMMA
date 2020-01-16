@@ -8,9 +8,16 @@
   border-radius: 2rem;
   padding: 2rem;
 
+  @include respond(Tablet-Landscape){
+    width: 100%;
+  }
   & input[type=text],input[type=email], textarea{
     width: 100%;
     font-size: 1.6rem;
+
+    @include respond(Tablet-Landscape){
+    font-size: 2rem;
+    }
   }
 
   & input[type=submit],input[type=reset]{
@@ -23,6 +30,12 @@
     color: #FFF;
     background-color: #ff0000;
     font-size: 1.6rem;
+
+    @include respond(Tablet-Landscape){
+      font-size: 2.5rem;
+      width: 10rem;
+      height: 5rem;
+    }
   }
 
   & input[type=submit]:hover,input[type=reset]:hover{
@@ -36,5 +49,15 @@
 
   &--header{
     color: $color__black;
+
+    @include respond(Tablet-Landscape){
+      font-size: 4rem;
+    }
+  }
+
+  @include respond(Tablet-Landscape){
+    p{
+      font-size: 3rem;
+    }
   }
 }

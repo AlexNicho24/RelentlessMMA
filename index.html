@@ -24,13 +24,23 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 		<script>
-			function opennav(){
-				document.getElementById('slidenav').style.width="250px";
+		document.addEventListener('DOMContentLoaded',opennav);
+
+			function opennav(x){
+				var x = window.matchMedia("(max-width: 75em)");
+
+				if (x.matches) { // If media query matches
+			   	document.getElementById('slidenav').style.width="50rem";
+			 	}else{
+					document.getElementById('slidenav').style.width="25rem";
+				}
 			}
 
 			function closenav(){
 				document.getElementById('slidenav').style.width="0px";
 			}
+
+
 		</script>
 	</head>
 

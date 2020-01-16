@@ -33,6 +33,11 @@
     padding-top: 5rem;
     color: $color__white;
     font-size: 2rem;
+
+    @include respond(Tablet-Landscape){
+      font-size: 3rem;
+      text-align: center;
+    }
   }
 
   &__img--photos{

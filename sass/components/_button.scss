@@ -14,6 +14,10 @@
     //change for the <button> element
     border: none;
     cursor: pointer;
+
+    @include respond(Tablet-Landscape){
+      font-size: 2.5rem;
+    }
   }
 
   &:hover,
@@ -108,6 +112,10 @@
   color: #86C232;
   cursor: pointer;
   position: fixed;
+
+  @include respond(Tablet-Landscape){
+    font-size: 70px;
+  }
 
   &:hover{
     transform: translateY(-3px);

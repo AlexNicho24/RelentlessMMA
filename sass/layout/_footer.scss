@@ -7,6 +7,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @include respond(Tablet-Landscape){
+    font-size: 2rem;
+  }
   &__navigation{
     margin-top: 5rem;
     border-top: 1px solid $color__grey--dark;

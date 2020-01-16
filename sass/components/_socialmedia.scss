@@ -12,6 +12,12 @@
     cursor: pointer;
     width: 6rem;
     height: 6rem;
+
+    @include respond(Tablet-Landscape){
+      width: 10rem;
+      height: 10rem;
+      font-size: 60px;
+    }
   }
 
   & a:hover{
@@ -48,9 +54,13 @@
     text-align: center;
     border-radius: 2rem;
     color: #fff;
-    font-size: 5rem;
+    font-size: 6rem;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     padding-top: .5rem;
+
+    @include respond(Tablet-Landscape){
+      font-size: 9rem;
+    }
   }
 }

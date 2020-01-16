@@ -112,7 +112,10 @@ body {
   padding: 5rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-  max-width: 65%; }
+  max-width: 61%; }
+  @media (max-width: 75em) {
+    .bio {
+      max-width: 100%; } }
   .bio__img {
     width: 50rem;
     height: 50rem;
@@ -126,18 +129,30 @@ body {
     letter-spacing: -.1rem;
     font-family: 'Acme', sans-serif;
     color: #4B0082; }
+    @media (max-width: 75em) {
+      .bio__header--subtitle {
+        font-size: 3rem; } }
   .bio__header--role {
     font-size: 1.5rem;
     font-family: 'Acme', sans-serif;
     color: #777; }
+    @media (max-width: 75em) {
+      .bio__header--role {
+        font-size: 2.5rem; } }
   .bio__paragraph {
     padding-left: .8rem;
     font-size: 1.5rem; }
+    @media (max-width: 75em) {
+      .bio__paragraph {
+        font-size: 2.5rem; } }
   .bio__header--titles {
     display: flex;
     font-family: 'Acme', sans-serif;
     flex-basis: 100%;
     color: #4B0082; }
+    @media (max-width: 75em) {
+      .bio__header--titles {
+        font-size: 2.5rem; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -150,6 +165,9 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 75em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 2.5rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -228,6 +246,9 @@ body {
   color: #86C232;
   cursor: pointer;
   position: fixed; }
+  @media (max-width: 75em) {
+    .icon {
+      font-size: 70px; } }
   .icon:hover {
     transform: translateY(-3px); }
   .icon:hover::after {
@@ -245,11 +266,8 @@ body {
   font-size: 1.5rem; }
   @media (max-width: 75em) {
     #calendar {
-      max-width: 100rem;
-      font-size: 1.3rem; } }
-
-.composition {
-  position: relative; }
+      max-width: 150rem;
+      font-size: 3rem; } }
 
 .contact__form {
   margin: 0 auto;
@@ -260,9 +278,15 @@ body {
   background: #FFF;
   border-radius: 2rem;
   padding: 2rem; }
+  @media (max-width: 75em) {
+    .contact__form {
+      width: 100%; } }
   .contact__form input[type=text], .contact__form input[type=email], .contact__form textarea {
     width: 100%;
     font-size: 1.6rem; }
+    @media (max-width: 75em) {
+      .contact__form input[type=text], .contact__form input[type=email], .contact__form textarea {
+        font-size: 2rem; } }
   .contact__form input[type=submit], .contact__form input[type=reset] {
     outline: none;
     width: 7rem;
@@ -273,6 +297,11 @@ body {
     color: #FFF;
     background-color: #ff0000;
     font-size: 1.6rem; }
+    @media (max-width: 75em) {
+      .contact__form input[type=submit], .contact__form input[type=reset] {
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem; } }
   .contact__form input[type=submit]:hover, .contact__form input[type=reset]:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -281,6 +310,12 @@ body {
     box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2); }
   .contact__form--header {
     color: #000; }
+    @media (max-width: 75em) {
+      .contact__form--header {
+        font-size: 4rem; } }
+  @media (max-width: 75em) {
+    .contact__form p {
+      font-size: 3rem; } }
 
 .contact__guide {
   display: flex;
@@ -329,6 +364,9 @@ body {
     transition: all .5s;
     backface-visibility: hidden;
     font-family: 'Black Ops One', cursive; }
+    @media (max-width: 75em) {
+      .selections__caption {
+        font-size: 5rem; } }
   .selections__shape:hover .selections__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
@@ -348,6 +386,11 @@ body {
     cursor: pointer;
     width: 6rem;
     height: 6rem; }
+    @media (max-width: 75em) {
+      .social-media a {
+        width: 10rem;
+        height: 10rem;
+        font-size: 60px; } }
   .social-media a:hover {
     transform: scale(1.3); }
   .social-media__icon--facebook a {
@@ -374,10 +417,13 @@ body {
     text-align: center;
     border-radius: 2rem;
     color: #fff;
-    font-size: 5rem;
+    font-size: 6rem;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
     padding-top: .5rem; }
+    @media (max-width: 75em) {
+      .social-media__icon--instagram a {
+        font-size: 9rem; } }
 
 .footer {
   color: #f7f7f7;
@@ -387,11 +433,14 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+  @media (max-width: 75em) {
+    .footer {
+      font-size: 2rem; } }
   .footer__navigation {
     margin-top: 5rem;
     border-top: 1px solid #777;
     padding-top: 2rem;
-    width: 26%; }
+    width: 28%; }
     @media (max-width: 75em) {
       .footer__navigation {
         width: 40%; } }
@@ -495,6 +544,9 @@ body {
   background-color: #61892F;
   color: #FFF;
   font-size: 2rem; }
+  @media (max-width: 75em) {
+    #slidenav .sidebar--header h3 {
+      font-size: 3rem; } }
 
 #slidenav ul.components {
   border-bottom: 1px solid blue; }
@@ -503,12 +555,18 @@ body {
   color: #FFF;
   padding: 2rem;
   font-size: 2rem; }
+  @media (max-width: 75em) {
+    #slidenav ul p {
+      font-size: 3rem; } }
 
 #slidenav ul li a {
   padding: 2rem;
   font-size: 2rem;
   display: block;
   color: #FFF; }
+  @media (max-width: 75em) {
+    #slidenav ul li a {
+      font-size: 3rem; } }
 
 .homepage {
   height: 100vh;
@@ -539,6 +597,10 @@ body {
     padding-top: 5rem;
     color: #FFF;
     font-size: 2rem; }
+    @media (max-width: 75em) {
+      .schedule__text {
+        font-size: 3rem;
+        text-align: center; } }
   .schedule__img--photos {
     display: flex;
     justify-content: center;
